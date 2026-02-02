@@ -31,6 +31,12 @@ This ensures responses are **grounded, explainable, and accurate**.
 
 ---
 
+## 🧠 RAG Flow Diagram
+
+![StudyRAG Flow](RAG_FLOW.png)
+
+---
+
 ## 🛠 Tech Stack
 
 - **Python**
