@@ -99,20 +99,15 @@ if st.button("ASK"):
                 prompt = PromptTemplate(
                     template=
                     ''' 
-                    You are a careful study assistant.
+                    You are a careful document reader.  
+                    Use ONLY the provided document context and chat history.  
+                    Do not use outside knowledge.  
+                    If the answer is not present, say "I don't know."  
+                    
+                    Chat History: {chat_history}  
+                    Document Context: {context}  
+                    Current Question: {question}
 
-                    Use ONLY the provided lecture notes and chat history.
-                    Do not use outside knowledge.
-                    If the answer is not present, say "I don't know."
-
-                    Chat History:
-                    {chat_history}
-
-                    Lecture Notes:
-                    {context}
-
-                    Current Question:
-                    {question}
 
                 ''',
                 input_variables=['chat_history','context','question']
