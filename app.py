@@ -12,6 +12,8 @@ from langchain_core.runnables import RunnableParallel, RunnableSequence, Runnabl
 from langchain_core.output_parsers import StrOutputParser
 from dotenv import load_dotenv
 load_dotenv()
+st.set_page_config(page_title="StudyRAG", layout="centered")
+
 
 if "chat_history" not in st.session_state:
     st.session_state.chat_history = []
@@ -19,7 +21,7 @@ if "chat_history" not in st.session_state:
 
 
 
-st.set_page_config(page_title="StudyRAG", layout="centered")
+
 
 st.title("🎥 StudyRAG")
 st.info(
